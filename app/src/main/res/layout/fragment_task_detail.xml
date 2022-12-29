@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Thông tin của lời nhắc"
+        app:titleTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/saveButton"
+                style="@style/T20M"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="Lưu"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="@dimen/dp16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/icDelete"
+                app:layout_constraintBottom_toBottomOf="@id/icDelete" />
+
+            <ImageView
+                android:id="@+id/icDelete"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginHorizontal="@dimen/dp16"
+                app:layout_constraintEnd_toStartOf="@id/saveButton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/icon_bin"
+                app:tint="@color/white" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/ink500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_border_8"
+                android:layout_marginVertical="@dimen/dp16"
+                android:layout_marginHorizontal="@dimen/dp16"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/taskTitle"
+                    style="@style/T16R"
+                    android:hint="Tiêu đề"
+                    android:textColorHint="@color/white300"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:padding="@dimen/dp8"
+                    android:background="@null" />
+
+                <View
+                    android:id="@+id/dividerTask"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1"
+                    android:background="@color/white" />
+
+                <EditText
+                    android:id="@+id/taskDescription"
+                    android:textColorHint="@color/white300"
+                    style="@style/T16R"
+                    android:hint="Ghi chú"
+                    android:gravity="left"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:padding="@dimen/dp8"
+                    android:background="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_border_8"
+                android:layout_marginHorizontal="@dimen/dp16"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/calendarLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp8">
+
+                    <ImageView
+                        android:id="@+id/dateIcon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/icon_calendar"
+                        app:tint="@color/red500"/>
+
+                    <TextView
+                        android:id="@+id/textDate"
+                        style="@style/T16M"
+                        android:textColor="@color/white"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp8"
+                        android:text="Ngày"
+                        app:layout_constraintStart_toEndOf="@id/dateIcon"
+                        app:layout_constraintTop_toTopOf="@id/dateIcon"
+                        app:layout_constraintBottom_toBottomOf="@id/dateIcon"/>
+
+                    <CalendarView
+                        android:id="@+id/calendarView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp12"
+                        android:layout_gravity="center_vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/dateIcon"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:id="@+id/dividerTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1"
+                    android:background="@color/white"
+                    android:layout_marginTop="@dimen/dp8"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/timeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:padding="@dimen/dp8">
+
+                    <ImageView
+                        android:id="@+id/timeIcon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/icon_clock"
+                        app:tint="@color/red500"/>
+
+                    <TextView
+                        android:id="@+id/textIcon"
+                        style="@style/T16M"
+                        android:textColor="@color/white"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp8"
+                        android:text="Thời gian"
+                        app:layout_constraintStart_toEndOf="@id/timeIcon"
+                        app:layout_constraintTop_toTopOf="@id/timeIcon"
+                        app:layout_constraintBottom_toBottomOf="@id/timeIcon"/>
+
+                    <TimePicker
+                        android:id="@+id/timeView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp12"
+                        app:layout_constraintTop_toBottomOf="@id/timeIcon"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:timePickerMode="spinner"
+                        android:layout_marginBottom="10dp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

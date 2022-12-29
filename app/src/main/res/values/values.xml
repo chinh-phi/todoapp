@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="T10M">
+        <item name="android:textSize">10dp</item>
+        <item name="fontFamily">@font/app_medium</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:textColor">@color/ink500</item>
+    </style>
+    <style name="T10R">
+        <item name="android:textSize">10dp</item>
+        <item name="fontFamily">@font/app_regular</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:textColor">@color/ink500</item>
+    </style>
+    <style name="T12M">
+        <item name="android:textSize">12dp</item>
+        <item name="fontFamily">@font/app_medium</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:textColor">@color/ink500</item>
+    </style>
+    <style name="T12R">
+        <item name="android:textSize">12dp</item>
+        <item name="fontFamily">@font/app_regular</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:textColor">@color/ink500</item>
+    </style>
+    <style name="T14M">
+        <item name="android:textSize">14dp</item>
+        <item name="fontFamily">@font/app_medium</item>
+        <item name="android:lineSpacingExtra">6dp</item>
+        <item name="android:textColor">@color/ink500</item>
+    </style>
+    <style name="T14R">
+        <item name="android:textSize">14dp</item>
+        <item name="fontFamily">@font/app_regular</item>
+        <item name="android:lineSpacingExtra">6dp</item>
+        <item name="android:textColor">@color/ink500</item>
+    </style>
+    <style name="T16M">
+        <item name="android:textSize">16dp</item>
+        <item name="fontFamily">@font/app_medium</item>
+        <item name="android:lineSpacingExtra">8dp</item>
+        <item name="android:textColor">@color/ink500</item>
+    </style>
+    <style name="T16M20">
+        <item name="android:textSize">16dp</item>
+        <item name="fontFamily">@font/app_medium</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:textColor">@color/ink500</item>
+    </style>
+    <style name="T16R">
+        <item name="android:textSize">16dp</item>
+        <item name="fontFamily">@font/app_regular</item>
+        <item name="android:lineSpacingExtra">8dp</item>
+        <item name="android:textColor">@color/ink500</item>
+    </style>
+    <style name="T16R20">
+        <item name="android:textSize">16dp</item>
+        <item name="fontFamily">@font/app_regular</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:textColor">@color/ink500</item>
+    </style>
+    <style name="T20M">
+        <item name="android:textSize">20dp</item>
+        <item name="fontFamily">@font/app_medium</item>
+        <item name="android:lineSpacingExtra">8dp</item>
+        <item name="android:textColor">@color/ink500</item>
+    </style>
+    <style name="T20R">
+        <item name="android:textSize">20dp</item>
+        <item name="fontFamily">@font/app_regular</item>
+        <item name="android:lineSpacingExtra">8dp</item>
+        <item name="android:textColor">@color/ink500</item>
+    </style>
+    <style name="T24M">
+        <item name="android:textSize">24dp</item>
+        <item name="fontFamily">@font/app_medium</item>
+        <item name="android:lineSpacingExtra">8dp</item>
+        <item name="android:textColor">@color/ink500</item>
+    </style>
+    <style name="T24R">
+        <item name="android:textSize">24dp</item>
+        <item name="fontFamily">@font/app_regular</item>
+        <item name="android:lineSpacingExtra">8dp</item>
+        <item name="android:textColor">@color/ink500</item>
+    </style>
+    <style name="T30M">
+        <item name="android:textSize">32dp</item>
+        <item name="fontFamily">@font/app_medium</item>
+        <item name="android:lineSpacingExtra">8dp</item>
+        <item name="android:textColor">@color/ink500</item>
+    </style>
+    <style name="T30R">
+        <item name="android:textSize">32dp</item>
+        <item name="fontFamily">@font/app_regular</item>
+        <item name="android:lineSpacingExtra">8dp</item>
+        <item name="android:textColor">@color/ink500</item>
+    </style>
+    <style name="T48M">
+        <item name="android:textSize">48dp</item>
+        <item name="fontFamily">@font/app_medium</item>
+        <item name="android:lineSpacingExtra">8dp</item>
+        <item name="android:textColor">@color/ink500</item>
+    </style>
+    <style name="T48R">
+        <item name="android:textSize">48dp</item>
+        <item name="fontFamily">@font/app_regular</item>
+        <item name="android:lineSpacingExtra">8dp</item>
+        <item name="android:textColor">@color/ink500</item>
+    </style>
+</resources>
